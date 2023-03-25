@@ -18,7 +18,7 @@ pygame.display.flip()
 
 clock = pygame.time.Clock()
 
-pygame.draw.circle(screen, color, center_point,  20)
+#pygame.draw.circle(screen, color, center_point,  20)
 
 pygame.display.update()
 
@@ -59,7 +59,7 @@ class Wurm():
 
 
 
-
+#if pygame.key.get_pressed()[pygame.K_RIGHT]:
 
 
 
@@ -84,11 +84,13 @@ while running:
                 quit()
             elif event.key == pygame.K_k:
                 pass
+            """
             elif event.key == pygame.K_a:
-                print ("a")
+                #print ("a")
                 wurm.turn(change)
             elif event.key == pygame.K_d:
                 wurm.turn(-change)
+            """
 
     wurm.move()
     wurm.draw()
